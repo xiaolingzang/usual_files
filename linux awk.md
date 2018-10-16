@@ -1,18 +1,18 @@
 #linux awk
 
-- [linux awk命令简介](#linux awk命令简介)
+- [linux awk命令简介](#linux_awk命令简介)
 	- [语法](#语法)
 	- [参数选项说明](#参数选项说明)
 - [基本用法](#基本用法)
 - [运算符](#运算符)
 - [内建变量](#内建变量)
 - [awk脚本](#awk脚本)
-- [awk 的if、循环和数组](#awk 的if、循环和数组)
+- [awk 的if、循环和数组](#awk的if、循环和数组)
 	- [条件语句](#条件语句)
 	- [循环结构](#循环结构)
 		- [for循环](#for循环)
 		- [while循环](#while循环)
-		- [break 和 continue](#break 和 continue)
+		- [break 和 continue](#break和continue)
 - [awk内置字符串函数](#awk内置字符串函数)
 
 ## linux awk命令简介
@@ -370,7 +370,7 @@ Bob    2415     40       57       62      159
   TOTAL:       319      393      350
 AVERAGE:     63.80    78.60    70.00
 ```
-## awk 的if、循环和数组
+## awk的if、循环和数组
 ###条件语句
 awk 提供了非常好的类似于 C 语言的 if 语句。  
 ```
@@ -430,7 +430,7 @@ awk 的 while 循环结构，它等同于相应的 C 语言 while 循环。 awk 
 ```
 与一般的 while 循环不同，由于在代码块之后对条件求值， "do...while"循环永远都至少执行一次。换句话说，当第一次遇到普通 while 循环时，如果条件为假，将永远不执行该循环。
 
-- break 和 continue
+- break和continue
 awk 提供了 break 和 continue 语句。使用这些语句可以更好地控制 awk 的循环结构
 ```
 #break 语句示例
@@ -479,12 +479,12 @@ Tarray[“birth”]=”800927”
 使用中 print Tarray[1] 将得到”cheng mo” 而 print Tarray[2] 和 print[“birth”] 都将得到 ”800927” 。
 
 - 数组相关函数
-1. 得到数组长度
+1. 得到数组长度  
 ```
 #split进行分割字符串为数组，也会返回分割得到数组长度。
 $ awk 'BEGIN{info="it is a test";lens=split(info,tA," ");print lens;}'
 4 4
-	```
+```
 2. 输出数组内容(无序，有序输出）：
 
 ```
@@ -537,8 +537,7 @@ b b1
 | substr(s,p) | 返回字符串s中从p开始的后缀部分 |
 | substr(s,p,n) | 返回字符串s中从p开始长度为n的后缀部分 |
 
-实例：
-
+实例：  
 ```
 #替换
 $ awk 'BEGIN{info="this is a test2010test!";gsub(/[0-9]+/,"!",info);print info}' 
@@ -560,7 +559,6 @@ awk 'BEGIN{info="this is a test";split(info,tA," ");print length(tA);for(k in tA
 2 is
 3 a
 ```
-
 
 ## 另外一些实例
 
