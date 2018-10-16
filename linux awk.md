@@ -1,4 +1,4 @@
-#linux awk
+# linux awk
 
 - [linux awk命令简介](#linux_awk命令简介)
 	- [语法](#语法)
@@ -461,7 +461,7 @@ while (1) {
 ```
 这段代码打印"iteration1"到"iteration21"， "iteration4"除外。如果迭代等于 4，则增加 x并调用 continue 语句，该语句立即使 awk 开始执行下一个循环迭代，而不执行代码块的其余部分。
 
-###数组
+### 数组
 
 - 定义
 
@@ -521,7 +521,7 @@ $ awk 'BEGIN{tB["a"]="a1";tB["b"]="b1";delete tB["a"];for(k in tB){print k,tB[k]
 b b1
 ```
 
-##awk内置字符串函数
+## awk内置字符串函数
 
 
 | 函数 | 功能 |
