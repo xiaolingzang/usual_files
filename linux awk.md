@@ -106,14 +106,14 @@ $  awk -F, '{print $1,$2}'   log.txt
  3 Are you like awk
  This's a test
  10 There are orange apple
-# 或者使用内建变量
+#或者使用内建变量
  $ awk 'BEGIN{FS=","} {print $1,$2}'     log.txt
  ---------------------------------------------
  2 this is a test
  3 Are you like awk
  This's a test
  10 There are orange apple
-# 使用多个分隔符.先使用空格分割，然后对分割结果再使用","分割
+#使用多个分隔符.先使用空格分割，然后对分割结果再使用","分割
  $ awk -F '[ ,]'  '{print $1,$2,$5}'   log.txt
  ---------------------------------------------
  2 this test
@@ -262,14 +262,14 @@ log.txt    2    1    '    1    1
 log.txt    2    2    '    1    2
 log.txt    2    3    '    2    3
 log.txt    2    4    '    1    4
-# 输出顺序号 NR, 匹配文本行号
+#输出顺序号 NR, 匹配文本行号
 $ awk '{print NR,FNR,$1,$2,$3}' log.txt
 ---------------------------------------------
 1 1 2 this is
 2 2 3 Are you
 3 3 This's a test
 4 4 10 There are
-# 指定输出分割符
+#指定输出分割符
 $  awk '{print $1,$2,$5}' OFS=" $ "  log.txt
 ---------------------------------------------
 2 $ this $ test
@@ -371,7 +371,7 @@ Bob    2415     40       57       62      159
 AVERAGE:     63.80    78.60    70.00
 ```
 ## awk的if、循环和数组
-###条件语句
+### 条件语句
 awk 提供了非常好的类似于 C 语言的 if 语句。  
 ```
 {
