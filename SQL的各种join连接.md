@@ -24,7 +24,7 @@ table1.column_name=table2.column_name
 ```
 
 <div align="center">
- ![](https://github.com/xiaolingzang/usual_files/blob/master/markdown_pictures/Inner_Join.png)
+ ![](https://github.com/xiaolingzang/usual_files/blob/master/markdown_pictures/Inner_Join.jpg)
 </div>
 
 ```
@@ -50,7 +50,7 @@ LEFT JOIN table 2
 ON table 1.column_name=table 2.column_name
 ```
 <div align="center">
-![](https://github.com/xiaolingzang/usual_files/blob/master/markdown_pictures/Left_Join.png)
+![](https://github.com/xiaolingzang/usual_files/blob/master/markdown_pictures/Left_Join.jpg)
 </div>
 
 ```
@@ -77,7 +77,7 @@ RIGHT JOIN table 2
 ON table 1.column_name=table 2.column_name
 ```
 <div align="center">
-![](https://github.com/xiaolingzang/usual_files/blob/master/markdown_pictures/Right_Join.png)
+![](https://github.com/xiaolingzang/usual_files/blob/master/markdown_pictures/Right_Join.jpg)
 </div>
 
 执行以上SQL输出结果如下：
@@ -101,7 +101,7 @@ ON table 1.column_name=table 2.column_name
 ```
 
  <div align="center">
-![](https://github.com/xiaolingzang/usual_files/blob/master/markdown_pictures/Full_Outer_Join.png)
+![](https://github.com/xiaolingzang/usual_files/blob/master/markdown_pictures/Full_Outer_Join.jpg)
 </div>
 
 ```
