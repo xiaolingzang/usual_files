@@ -8,7 +8,7 @@ git pull --rebae = git fetch + git rebase
 git rebase用于把一个分支的修改合并到当前分支。
 假设你现在基于远程分支"origin"，创建一个叫"mywork"的分支。假设远程分支"origin"已经有了2个提交，如图
 
-![](https://github.com/xiaolingzang/usual_files/tree/master/markdown_pictures/rebase_1.jpg)
+![image](https://github.com/xiaolingzang/usual_files/tree/master/markdown_pictures/rebase_1.jpg)
 
 现在我们在mywork分支做一些修改，然后生成两个提交(commit)
 
