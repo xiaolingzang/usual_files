@@ -8,7 +8,7 @@ git pull --rebae = git fetch + git rebase
 git rebase用于把一个分支的修改合并到当前分支。
 假设你现在基于远程分支"origin"，创建一个叫"mywork"的分支。假设远程分支"origin"已经有了2个提交，如图
 
-![image](https://github.com/xiaolingzang/usual_files/tree/master/markdown_pictures/rebase_1.jpg)
+![](https://github.com/xiaolingzang/usual_files/master/markdown_pictures/rebase_1.jpg)
 
 现在我们在mywork分支做一些修改，然后生成两个提交(commit)
 
@@ -21,11 +21,11 @@ $ git commit
 ```
 但是与此同时，有些人也在"origin"分支上做了一些修改并且做了提交了. 这就意味着"origin"和"mywork"这两个分支各自"前进"了，它们之间"分叉"了。
 
-![](https://github.com/xiaolingzang/usual_files/tree/master/markdown_pictures/rebase_2.jpg)
+![](https://github.com/xiaolingzang/usual_files/master/markdown_pictures/rebase_2.jpg)
 
 可以用"pull"命令把"origin"分支上的修改拉下来并且和你的修改合并； 结果看起来就像一个新的"合并的提交"(merge commit):
 
-![](https://github.com/xiaolingzang/usual_files/tree/master/markdown_pictures/rebase_3.jpg)
+![](https://github.com/xiaolingzang/usual_files/master/markdown_pictures/rebase_3.jpg)
 
 但是，如果你想让"mywork"分支历史看起来像没有经过任何合并一样，你也许可以用 git rebase:
 
